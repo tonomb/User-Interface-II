@@ -20,9 +20,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -52,10 +50,86 @@ table {
 *{
     box-sizing: border-box;
     max-width: 100%;
+    color: #191970;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: 1px solid grey;
+
 }
 
 /* general styles */
 
 img{
     width: 400px;
+}
+
+
+/* header styles */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 5%;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+header h2{
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.navbar{
+    display: flex;
+    width: 30%;
+    text-align: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    width: 25%;
+    height: 36px;
+    padding: 0 10%;
+    border: 2px solid #191970;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-selected{
+    background-color: #191970;
+    color: white;
+}
+
+/* top section styles */
+
+.top-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+.top-section h1{
+    font-size: 5rem;
+    text-transform: capitalize;
+    margin-bottom: 4%;
+}
+
+.button{
+    width: auto;
+    padding: .5%;
+    border: 5px solid #191970;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: #191970;
+    color: white;
 }
