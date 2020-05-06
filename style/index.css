@@ -115,7 +115,7 @@ header h2{
 
 /* top section styles */
 
-.top div{
+.top-background{
     background: url("https://images.unsplash.com/photo-1507166763745-bfe008fbb831?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
     margin: 5% 15%;
     border-radius: 5px;
@@ -219,5 +219,50 @@ footer button{
 footer button:hover{
     border: 3px solid white;
     font-weight: bolder;
+
+}
+
+
+
+
+/* about styles */
+
+hr{
+    border-top: 3px solid #191970;
+    width: 30%;
+    margin-left: 0;
+}
+
+
+.top-section-about{
+    display: inline-block;
+    margin: 0 5%;
+    margin-top: 36px;
+    text-align: left;
+    
+}
+
+.top-section-about h4{
+    font-size: 1.7rem;
+    margin: 36px 0;
+    color: #160947;
+}
+
+
+.top-section-about li{
+    list-style-type: square;
+    margin: 36px 0;
+    color: #160947;
+    font-size: 1.5rem;
+    font-weight: 100;
+    list-style-position: inside;
+}
+
+.top-section-about a{
+    text-decoration: underline;
+}
+
+li a:hover{
+    color: #1E90FF;
 
 }
