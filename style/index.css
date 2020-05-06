@@ -177,6 +177,13 @@ header h2{
     
 }
 
+.project-content:hover{
+    font-weight: bolder;
+    font-size: 2.1rem;
+    text-decoration: underline;
+    
+}
+
 .project-content img{
     border-radius: 5px;
     width: 100%;
@@ -190,6 +197,8 @@ header h2{
     text-align: center;
     cursor: pointer;
 }
+
+
 
 
 /* footer styles */
