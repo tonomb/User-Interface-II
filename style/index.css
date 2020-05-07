@@ -220,6 +220,10 @@ footer button:hover{
     .navbar{
         width: 45%;
     }
+
+    .top-background{
+        margin: 5% 10%;
+    }
 }
 
 
@@ -258,6 +262,39 @@ footer button:hover{
 
 @media(max-width: 500px){
 
+    header h2{
+        font-size: 1.8rem;
+    }
+
+    .navbar a{
+        font-size: 1.2rem;
+    }
+
+    /* top section */
+
+    .top-background{
+        height: 50vh;
+    }
+
+    .top-section h1{
+        font-size: 3rem;
+    }
+
+    .button{
+        font-size: 1.8rem;
+        border: 3px solid #160947;
+    }
+
+     /* gallery section */
+     .project-content{
+        width: 49%;
+        
+        
+    }
+
+    .project-content img{
+        height: 180px;
+    }
 
 }
 
