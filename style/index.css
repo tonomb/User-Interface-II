@@ -258,8 +258,6 @@ footer button:hover{
     /* gallery section */
     .project-content{
         width: 47%;
-        
-        
     }
 
     .project-content img{
@@ -367,25 +365,33 @@ hr{
     
 }
 
+.top-section-about h1{
+    display: none;
+}
+
 .top-section-about h4{
     font-size: 2.5rem;
-    margin: 36px 0;
+    margin: 6% 0;
     color: #160947;
 }
 
 
 .top-section-about li{
     list-style-type: square;
-    margin: 36px 0;
+    margin: 6% 0;
     color: #160947;
     font-size: 2.4rem;
     font-weight: 100;
     list-style-position: inside;
 }
 
+.top-section-about span{
+    font-size: inherit;
+}
+
 .top-section-about a{
     text-decoration: underline;
-    font-size: 2.4rem;
+    font-size: inherit;
     
 }
 
@@ -393,4 +399,30 @@ li a:hover{
     color: #1E90FF;
     font-weight: 300;
 
+}
+
+@media(max-width: 415px){
+
+    .top-section-about{
+        height: 85vh;
+    }
+    .top-section-about h1{
+        margin: 5%;
+        font-size: 2.9rem;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .top-section-about hr{
+        margin: 20px 0;
+    }
+
+    .top-section-about li{
+        font-size: 1.5rem;
+    }
+
+    .top-section-about span {
+        display: none;
+    }
+    
 }
