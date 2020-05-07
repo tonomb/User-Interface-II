@@ -20,7 +20,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -54,30 +54,44 @@ a{
 *{
     box-sizing: border-box;
     max-width: 100%;
-    color: #191970;
+    color: #160947;
     font-family: 'Noto Sans JP', sans-serif;
     /* border: 1px solid grey; */
 }
 
-/* general styles */
 
-img{
-    width: 400px;
+/* ===== accessibility ===== */
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+ 
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
 }
 
 
-/* header styles */
+
+/* ===== header styles ===== */
 
 header{
     display: flex;
     justify-content: space-between;
-    margin: 16px 5%;
+    margin: 2% 5%;
     align-items: center;
-    margin-top: 32px;
+    margin-top: 3%;
 }
 
 header h2{
-    font-size: 3rem;
+    font-size: 3.8rem;
     text-transform: capitalize;
 }
 
@@ -90,10 +104,9 @@ header h2{
 .navbar a{
     text-decoration: none;
     width: 25%;
-    height: 36px;
-    padding: 0 10%;
-    border: 2px solid #191970;
-    font-size: 1.1rem;
+    padding: 2% 10%;
+    border: 2px solid #160947;
+    font-size: 1.9rem;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -101,19 +114,19 @@ header h2{
 }
 
 .navbar a:hover{
-    background-color: #191970;
+    background-color: #160947;
     color: white;
     font-weight: bolder;
 }
 
 .navbar-selected{
-    background-color: #191970;
+    background-color: #160947;
     color: white;
 }
 
 
 
-/* top section styles */
+/* ===== top section styles ===== */
 
 .top-background{
     background: url("https://images.unsplash.com/photo-1507166763745-bfe008fbb831?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
@@ -136,16 +149,16 @@ header h2{
     text-transform: capitalize;
     margin-bottom: 4%;
     background-color: white;
-    padding: 12px;
+    padding: 1.2%;
     border-radius: 5px;
 }
 
 .button{
     width: auto;
     padding: 1%;
-    border: 5px solid #191970;
+    border: 5px solid #160947;
     background-color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -154,16 +167,16 @@ header h2{
 }
 
 .button:hover{
-    background-color: #191970;
+    background-color: #160947;
     color: white;
     font-weight: bolder;
 }
 
-/* section two starts here */
+/* ===== Gallery Project Styles ===== */
 
 #project-gallery{
     margin: 0 5%;
-    padding-top: 42px;
+    padding-top: 3%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -193,7 +206,7 @@ header h2{
 }
 
 .project-title{
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-align: center;
     cursor: pointer;
 }
@@ -201,11 +214,10 @@ header h2{
 
 
 
-/* footer styles */
+/* ===== footer styles ===== */
 
 footer{
-    height: 200px;
-    background-color: #191970;
+    background-color: #160947;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,6 +226,7 @@ footer{
 footer button{
     height: 50%;
     cursor: pointer;
+    margin: 2% 0;
 }
 
 footer button:hover{
@@ -222,13 +235,144 @@ footer button:hover{
 
 }
 
+/* ===== responsive design styles ===== */
+
+@media(max-width: 1300px){
+    .navbar{
+        width: 45%;
+    }
+
+    .top-background{
+        margin: 5% 10%;
+    }
+}
+
+
+@media(max-width: 1024px){
+    .project-content img{
+        height: 240px;
+    }
+}
 
 
 
-/* about styles */
+@media(max-width: 800px){
+
+    header h2{
+        font-size: 2.8rem;
+    }
+
+    .navbar{
+        width: 50%;
+    }
+
+    .navbar a{
+        font-size: 1.5rem;
+    }
+
+    /*  ===== top section ===== */
+
+    .top-background{
+        margin: 5% 5%;
+    }
+
+    /* ===== gallery section ===== */
+    .project-content{
+        width: 47%;
+    }
+
+    .project-content img{
+        height: 280px;
+    }
+}
+
+
+@media(max-width: 500px){
+
+    header h2{
+        font-size: 1.8rem;
+    }
+
+    .navbar a{
+        font-size: 1.2rem;
+    }
+
+    /* ===== top section ===== */
+
+    .top-background{
+        height: 50vh;
+    }
+
+    .top-section h1{
+        font-size: 3rem;
+    }
+
+    .button{
+        font-size: 1.8rem;
+        border: 3px solid #160947;
+    }
+
+     /* ===== gallery section ===== */
+     .project-content{
+        width: 49%;
+        
+        
+    }
+
+    .project-content img{
+        height: 180px;
+    }
+
+}
+
+@media(max-width: 430px){
+    header h2{
+        display: none;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+    .navbar a{
+        font-size: 1.5rem;
+    }
+    .project-content{
+        width: 47%;
+    }
+    .project-content img{
+        height: 120px;
+    }
+
+    .project-title{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 375px){
+    
+    .top-section h1{
+        font-size: 2.5rem;
+    }
+
+    .project-title{
+        font-size: 2rem;
+    }
+    
+
+    
+
+    
+}
+
+/* ===== about styles ===== */
+
+.top{
+    margin-bottom: 5%;
+}
 
 hr{
-    border-top: 3px solid #191970;
+    border-top: 3px solid #160947;
     width: 30%;
     margin-left: 0;
 }
@@ -237,32 +381,69 @@ hr{
 .top-section-about{
     display: inline-block;
     margin: 0 5%;
-    margin-top: 36px;
+    margin-top: 2%;
     text-align: left;
     
 }
 
+.top-section-about h1{
+    display: none;
+}
+
 .top-section-about h4{
-    font-size: 1.7rem;
-    margin: 36px 0;
+    font-size: 2.5rem;
+    margin: 6% 0;
     color: #160947;
 }
 
 
 .top-section-about li{
     list-style-type: square;
-    margin: 36px 0;
+    margin: 6% 0;
     color: #160947;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     font-weight: 100;
     list-style-position: inside;
 }
 
+.top-section-about span{
+    font-size: inherit;
+}
+
 .top-section-about a{
     text-decoration: underline;
+    font-size: inherit;
+    
 }
 
 li a:hover{
     color: #1E90FF;
+    font-weight: 300;
 
+}
+
+@media(max-width: 415px){
+
+    .top-section-about{
+        height: 85vh;
+    }
+    .top-section-about h1{
+        margin: 5%;
+        font-size: 2.9rem;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .top-section-about hr{
+        margin: 20px 0;
+    }
+
+    .top-section-about li{
+        font-size: 1.5rem;
+    }
+
+    .top-section-about span {
+        display: none;
+    }
+    
 }
