@@ -198,7 +198,6 @@ header h2{
 /* footer styles */
 
 footer{
-    height: 200px;
     background-color: #160947;
     display: flex;
     justify-content: center;
@@ -208,6 +207,7 @@ footer{
 footer button{
     height: 50%;
     cursor: pointer;
+    margin: 2% 0;
 }
 
 footer button:hover{
@@ -216,9 +216,43 @@ footer button:hover{
 
 }
 
+@media(max-width: 1300px){
+    .navbar{
+        width: 45%;
+    }
+}
+
 
 @media(max-width: 800px){
 
+    header h2{
+        font-size: 2.8rem;
+    }
+
+    .navbar{
+        width: 50%;
+    }
+
+    .navbar a{
+        font-size: 1.5rem;
+    }
+
+    /* top section */
+
+    .top-background{
+        margin: 5% 5%;
+    }
+
+    /* gallery section */
+    .project-content{
+        width: 49%;
+        
+        
+    }
+
+    .project-content img{
+        height: 280px;
+    }
 }
 
 
