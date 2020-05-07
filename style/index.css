@@ -60,8 +60,27 @@ a{
 }
 
 
+/* ===== accessibility ===== */
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+ 
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 
-/* header styles */
+
+
+/* ===== header styles ===== */
 
 header{
     display: flex;
@@ -107,7 +126,7 @@ header h2{
 
 
 
-/* top section styles */
+/* ===== top section styles ===== */
 
 .top-background{
     background: url("https://images.unsplash.com/photo-1507166763745-bfe008fbb831?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
@@ -153,7 +172,7 @@ header h2{
     font-weight: bolder;
 }
 
-/* section two starts here */
+/* ===== Gallery Project Styles ===== */
 
 #project-gallery{
     margin: 0 5%;
@@ -195,7 +214,7 @@ header h2{
 
 
 
-/* footer styles */
+/* ===== footer styles ===== */
 
 footer{
     background-color: #160947;
@@ -215,6 +234,8 @@ footer button:hover{
     font-weight: bolder;
 
 }
+
+/* ===== responsive design styles ===== */
 
 @media(max-width: 1300px){
     .navbar{
@@ -249,13 +270,13 @@ footer button:hover{
         font-size: 1.5rem;
     }
 
-    /* top section */
+    /*  ===== top section ===== */
 
     .top-background{
         margin: 5% 5%;
     }
 
-    /* gallery section */
+    /* ===== gallery section ===== */
     .project-content{
         width: 47%;
     }
@@ -276,7 +297,7 @@ footer button:hover{
         font-size: 1.2rem;
     }
 
-    /* top section */
+    /* ===== top section ===== */
 
     .top-background{
         height: 50vh;
@@ -291,7 +312,7 @@ footer button:hover{
         border: 3px solid #160947;
     }
 
-     /* gallery section */
+     /* ===== gallery section ===== */
      .project-content{
         width: 49%;
         
@@ -344,7 +365,7 @@ footer button:hover{
     
 }
 
-/* about styles */
+/* ===== about styles ===== */
 
 .top{
     margin-bottom: 5%;
